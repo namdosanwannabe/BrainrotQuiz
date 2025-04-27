@@ -28,7 +28,7 @@ function QuestionCard({ question, options, correctAnswer, image, onAnswerSelecte
                             className={`p-2 text-lg rounded-full transition-colors cursor-pointer ${isAnswered
                                 ? option === correctAnswer
                                     ? 'bg-purple text-white'
-                                    : 'bg-warning/90 text-white'
+                                    : 'bg-warning text-white'
                                 : 'bg-gray-200 hover:bg-gray-300'
                                 }`}
                             disabled={isAnswered}

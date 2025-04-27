@@ -46,7 +46,11 @@ function App() {
                     <div className="flex flex-col items-center justify-center bg-purple/10 rounded-2xl p-8 shadow-lg mt-12">
                         <h2 className="text-2xl sm:text-4xl text-center font-extrabold text-purple mb-6">
                             🎉 Congratulations! 🎉 <br />
-                            <span className='text-3xl'> You are a certified brainrot master!</span>
+                            {
+                                score <= 5
+                                    ? <span>You need to train more. 😂</span>
+                                    : <span className="text-3xl">You are a certified Brainrot master! 😎</span>
+                            }
                         </h2>
                         <p className="text-2xl font-semibold text-gray-800 mb-4">Your Score: <span className="text-purple">{score}</span></p>
                         <p className="text-2xl font-semibold text-gray-800">Time Remaining:
